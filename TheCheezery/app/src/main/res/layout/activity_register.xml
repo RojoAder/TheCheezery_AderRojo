@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="40dp"
     tools:context=".RegisterActivity">
 
     <ImageView
@@ -13,9 +14,60 @@
         android:src="@drawable/hello"
         android:layout_marginTop="40dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="40dp"
         />
     
     <EditText
-        android:layout_width=""
-        android:layout_height=""
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/input_margin"
+        />
+
+    <EditText
+        android:id="@+id/last_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/input_margin"
+        />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="@dimen/input_margin"
+        />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/input_margin"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/terms"
+        android:textStyle="italic"
+        android:layout_marginTop="@dimen/input_margin"
+        />
+
+    <Button
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/dusty_white"
+        />
 </LinearLayout>
