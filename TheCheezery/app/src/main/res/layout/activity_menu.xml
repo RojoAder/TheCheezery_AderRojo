@@ -44,7 +44,21 @@
             android:layout_gravity="fill_horizontal"
             android:layout_columnWeight="1"
             android:textSize="@dimen/menu_buttons_text"
-            
+            android:paddingVertical="@dimen/menu_buttons_padding_v"
+            android:id="@+id/cold_drinks"
+            />
+
+        <Button
+            android:text="@string/hot_drinks"
+            android:textColor="@color/dusty_white"
+            android:background="@drawable/first_gradient"
+            android:paddingHorizontal="@dimen/menu_button_padding"
+            android:layout_marginRight="@dimen/menu_buttons_margin"
+            android:layout_gravity="fill_horizontal"
+            android:layout_columnWeight="1"
+            android:textSize="@dimen/menu_buttons_text"
+            android:paddingVertical="@dimen/menu_buttons_padding_v"
+            android:id="@+id/hot_drinks"
             />
     </GridLayout>
 </LinearLayout>
