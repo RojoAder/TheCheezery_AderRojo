@@ -42,6 +42,9 @@
             android:paddingHorizontal="@dimen/menu_button_padding"
             android:layout_marginRight="@dimen/menu_buttons_margin"
             android:layout_gravity="fill_horizontal"
-            android:layout_columnWeight="1"/>
+            android:layout_columnWeight="1"
+            android:textSize="@dimen/menu_buttons_text"
+            
+            />
     </GridLayout>
 </LinearLayout>
