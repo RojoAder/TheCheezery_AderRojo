@@ -69,5 +69,6 @@
         android:layout_marginTop="40dp"
         android:text="@string/sign_in"
         android:textColor="@color/dusty_white"
+        android:id="@+id/button_sing_in"
         />
 </LinearLayout>
