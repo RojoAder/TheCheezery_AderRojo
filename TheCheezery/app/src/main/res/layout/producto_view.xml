@@ -2,32 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    >
 
     <ImageView
         android:id="@+id/producto_img"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_marginLeft="10dp"
-        android:src="@drawable/caramelfrap" />
+        android:src="@drawable/caramelfrap"
+        />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_weight="3"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        >
 
         <TextView
             android:id="@+id/producto_nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Caramel Frap"/>
+            android:text="Caramel Frap"
+            android:textColor="@color/product_name"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
 
         <TextView
             android:id="@+id/producto_desc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Descripcion del producto"
+            android:textColor="@color/product_desc"
+            android:fontFamily="sans-serif-light"
+            android:textSize="8sp"
+
             />
     </LinearLayout>
 
@@ -37,6 +50,10 @@
         android:layout_weight="1"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="5.00"/>
+        android:text="5.00"
+        android:textColor="@color/product_precio"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        />
 
 </LinearLayout>

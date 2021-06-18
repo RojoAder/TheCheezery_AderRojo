@@ -24,13 +24,27 @@ class ProductosActivity : AppCompatActivity() {
         agregaProductos()
 
         val listView = findViewById(R.id.listview) as ListView
+        val titulo = findViewById(R.id.headerTitulo) as ImageView
+
         val tipo: Int = intent.getIntExtra("tipo", -1)
         var adaptador: AdaptadorProductos? = null
         when (tipo) {
-            0 -> adaptador = AdaptadorProductos(this, colddrinks)
-            1 -> adaptador = AdaptadorProductos(this, hotdrinks)
-            2 -> adaptador = AdaptadorProductos(this, sweets)
-            3 -> adaptador = AdaptadorProductos(this, salties)
+            0 -> {
+                adaptador = AdaptadorProductos(this, colddrinks)
+                titulo.setImageResource(R.drawable.colddrinks)
+            }
+            1 -> {
+                adaptador = AdaptadorProductos(this, hotdrinks)
+                titulo.setImageResource(R.drawable.hotdrinks)
+            }
+            2 -> {
+                adaptador = AdaptadorProductos(this, sweets)
+                titulo.setImageResource(R.drawable.sweets)
+            }
+            3 -> {
+                adaptador = AdaptadorProductos(this, salties)
+                titulo.setImageResource(R.drawable.salties)
+            }
         }
         listView.adapter = adaptador
 
